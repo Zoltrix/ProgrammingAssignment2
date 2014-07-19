@@ -1,5 +1,7 @@
-## Functions in this file both contribute to save some time by caching
-## the inverse of a special matrix object
+## Functions in this file both contribute to save some time of 
+## potentially expensive oprations(in this case the inverse of a matrix)
+## by caching the inverse in a special matrix container
+
 
 
 ## This function creates a special "matrix" object that can cache its inverse.
