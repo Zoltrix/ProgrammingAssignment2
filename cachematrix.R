@@ -53,3 +53,17 @@ inv <- cacheSolve(m)
 
 #retreive the inverse again, should print out("getting cached data")
 inv <- cacheSolve(m)
+
+print("Changing the matrix ...")
+
+#create a new matrix, and try to get the cached inverse
+mat2 <- matrix(c(1, 3, 2, 4), 2, 2)
+
+#set the data inside the cached matrix with our new matrix
+m$set(mat2)
+
+#retreive the inverse (should calculate the new inverse)
+inv <- cacheSolve(m)
+
+#retreive the inverse again, should print out("getting cached data")
+inv <- cacheSolve(m)
